@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Bottom Navigation View -->
+    <me.ibrahimsn.lib.SmoothBottomBar
+        android:id="@+id/bottombar"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        app:backgroundColor="@color/colorPrimary"
+        app:textColor="@color/colorTextPrimary"
+        app:textSize="14sp"
+        app:iconSize="24dp"
+        app:indicatorColor="#2DFFFFFF"
+        app:indicatorRadius="16dp"
+        app:sideMargins="10dp"
+        app:itemPadding="10dp"
+        app:iconTint="#C8FFFFFF"
+        app:iconTintActive="#FFFFFF"
+        app:cornerRadius="16dp"
+        app:corners="top_left|bottom_right"
+        app:menu="@menu/bottom_items"
+        android:layout_alignParentBottom="true"/>
+
+    <!-- RecyclerView or ListView -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/bottombar"/>
+
+</RelativeLayout>

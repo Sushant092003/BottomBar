@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">BottomNavBar</string>
+
+    <string name="menu_places">Places</string>
+    <string name="menu_food">Food</string>
+    <string name="menu_shopping">Shopping</string>
+
+</resources>
